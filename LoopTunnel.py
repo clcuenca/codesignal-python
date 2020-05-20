@@ -19,11 +19,19 @@ def leastFactorial(n):
 
     return result
 
+# -------------------------------------------------------------------
+# Finds the smallest factorial result relative to the given integer n
+#
+# Problem #26
+#
+# Author: Carlos L. Cuenca
+# Date: 05/19/2020
+
 def countSumOfTwoRepresentations2(n, l, r):
 
     count = 0
 
-    for index in range(l, r):
+    for index in range(l, r + 1):
 
         if(index <= (n - index) and (n - index) <= r): count += 1
 
