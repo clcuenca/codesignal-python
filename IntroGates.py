@@ -27,3 +27,30 @@ def largestNumber(n):
         value = value*10 + 9
         
     return value
+
+# -----------------------------------------------------------------------
+# Returns the amount of candies each individual child will be able to eat
+# from a pot containing m candies
+#
+# Problem #3
+# 
+# @author Carlos L. Cuenca
+# @date: 07/06/2020
+
+def candies(n, m):
+    
+    return n * int(m / n)
+
+# ----------------------------------------------------------------------------
+# Returns the amount of seats that will be blocked if the person were to leave
+#
+# Problem #4
+#
+# @author: Carlos L. Cuenca
+# @date: 07/06/2020
+
+def seatsInTheater(nCols, nRows, col, row):
+    
+    return (nCols - col + 1)*(nRows - row)
+
+        
