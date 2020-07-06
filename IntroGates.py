@@ -53,4 +53,15 @@ def seatsInTheater(nCols, nRows, col, row):
     
     return (nCols - col + 1)*(nRows - row)
 
-        
+# -----------------------------------------------------------------------
+# Returns the largest number that's divisible by the given divisor & less
+# than or equal to the given bound
+#
+# Problem #5
+# 
+# @author: Carlos L. Cuenca
+# @since: 07/06/2020
+
+def maxMultiple(divisor, bound):
+
+	return bound - (divisor % divisor)
