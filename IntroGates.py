@@ -65,3 +65,32 @@ def seatsInTheater(nCols, nRows, col, row):
 def maxMultiple(divisor, bound):
 
 	return bound - (divisor % divisor)
+
+# -----------------------------------------------------------------------------
+# Returns the radially opposite number from the given amount of numbers
+# and the given first number. Since the numbers are in a circle, 'overflowing'
+# numbers need to be taken into account (e.g. 7 + 5 with a given n = 10 
+# should equate to 2, not 12) therefore, the remainder is taken; this also
+# covers the case when the radially opposite number is less that a given n = 10
+#
+# Problem #6
+#
+# @author: Carlos L. Cuenca
+# @since: 07/06/2020
+
+def circleOfNumbers(n, firstNumber):
+    
+    return (firstNumber + int(n / 2)) % n
+
+# ------------------------------------------------------------------------
+# Returns the sum of each of the digits after n minutes have elapsed since
+# 00:00.
+#
+# Problem #7
+#
+# @author: Carlos L. Cuenca
+# @since: 07/06/2020
+
+def lateRide(n):
+
+    return (int(n/60/10)) + (int(n/60)%10) + (int(n%60/10)) + (int(n%60%10))
