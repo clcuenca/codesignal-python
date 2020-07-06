@@ -94,3 +94,22 @@ def circleOfNumbers(n, firstNumber):
 def lateRide(n):
 
     return (int(n/60/10)) + (int(n/60)%10) + (int(n%60/10)) + (int(n%60%10))
+
+# --------------------------------------------------------------------------
+# Returns the amount of minutes given s cents and min1, min2_10, min11 rates
+# for the first minute, second to tenth, & eleventh or above minutes
+#
+# Problem #8
+# 
+# @author: Carlos L. Cuenca
+# @since: 07/06/2020
+
+def phoneCall(min1, min2_10, min11, s):
+    
+    if not s or s - min1 < 0: return 0
+    
+    if s < min1 + 9*min2_10: 
+        
+        return int((s - min1) / min2_10 + 1) 
+        
+    return int((s - min1 - 9*min2_10) / min11) + 10
