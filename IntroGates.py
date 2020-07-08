@@ -108,7 +108,7 @@ def phoneCall(min1, min2_10, min11, s):
     
     if not s or s - min1 < 0: return 0
     
-    if s < min1 + 9*min2_10: 
+    if s - min1 - 9*min2_10 < 0: 
         
         return int((s - min1) / min2_10 + 1) 
         
